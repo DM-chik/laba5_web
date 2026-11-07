@@ -1,0 +1,126 @@
+.catalog {
+    min-height: 320px;
+}
+
+.catalog__layout {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+}
+
+.catalog__content {
+    min-width: 0;
+}
+
+.catalog__toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.catalog__count {
+    color: #475467;
+    font-size: 15px;
+}
+
+.catalog__count strong {
+    color: #101828;
+}
+
+.catalog__notice {
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: #fffaeb;
+    border: 1px solid #fedf89;
+    color: #93370d;
+    font-size: 14px;
+}
+
+.catalog__status {
+    margin-bottom: 20px;
+    color: #667085;
+    font-size: 15px;
+}
+
+.catalog__message {
+    padding: 48px 24px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+}
+
+.catalog__message h2 {
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: #101828;
+}
+
+.catalog__message p {
+    margin-bottom: 16px;
+    color: #667085;
+}
+
+.catalog__message--error h2 {
+    color: #b42318;
+}
+
+.catalog__message--error p {
+    color: #b42318;
+}
+
+/* --- Сетка карточек --- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* --- Скелетоны загрузки --- */
+.skeleton-card {
+    padding: 16px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+}
+
+.skeleton-card__image {
+    height: 160px;
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+
+.skeleton-card__line {
+    height: 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.skeleton-card__line--short {
+    width: 60%;
+}
+
+.skeleton-card__image,
+.skeleton-card__line {
+    background: linear-gradient(90deg, #eef1f6 25%, #f7f9fc 50%, #eef1f6 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.4s infinite;
+}
+
+@keyframes shimmer {
+    from {
+        background-position: 200% 0;
+    }
+    to {
+        background-position: -200% 0;
+    }
+}
+
+@media (max-width: 860px) {
+    .catalog__layout {
+        grid-template-columns: 1fr;
+    }
+}

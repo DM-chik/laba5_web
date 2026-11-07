@@ -1,0 +1,68 @@
+// Резервный набор данных: используется, только если публичный API недоступен.
+// Структура полностью совпадает с ответом fakestoreapi.com.
+export const FALLBACK_PRODUCTS = [
+    {
+        id: 1,
+        title: "Футболка с длинным рукавом",
+        price: 109.95,
+        category: "men's clothing",
+        image: "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        rating: { rate: 3.9, count: 120 },
+    },
+    {
+        id: 2,
+        title: "Серебряное кольцо с бриллиантом",
+        price: 695,
+        category: "jewelery",
+        image: "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        rating: { rate: 4.6, count: 400 },
+    },
+    {
+        id: 3,
+        title: "Мужская куртка",
+        price: 55.99,
+        category: "men's clothing",
+        image: "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        rating: { rate: 4.7, count: 235 },
+    },
+    {
+        id: 4,
+        title: "Женская джинсовая куртка",
+        price: 56.99,
+        category: "women's clothing",
+        image: "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        rating: { rate: 4.5, count: 180 },
+    },
+    {
+        id: 5,
+        title: "Внешний SSD 1 ТБ",
+        price: 129.99,
+        category: "electronics",
+        image: "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        rating: { rate: 4.4, count: 320 },
+    },
+    {
+        id: 6,
+        title: "Беспроводные наушники",
+        price: 199.99,
+        category: "electronics",
+        image: "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        rating: { rate: 4.2, count: 510 },
+    },
+    {
+        id: 7,
+        title: "Женское летнее платье",
+        price: 39.99,
+        category: "women's clothing",
+        image: "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        rating: { rate: 4.1, count: 90 },
+    },
+    {
+        id: 8,
+        title: "Золотые серьги",
+        price: 999.99,
+        category: "jewelery",
+        image: "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        rating: { rate: 4.8, count: 260 },
+    },
+];
